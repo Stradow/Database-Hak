@@ -1,39 +1,690 @@
 {
-	"users": [
-		{
-			"id": 1,
-			"firstname": "Josh",
-			"dog": "Ragnar",
-			"hobbies": ["Surf", "Being bad at videogames"]
-		},
-		{
-			"id": 2,
-			"firstname": "Eric",
-			"cat": false,
-			"hobbies": ["Lord of the Rings", "DnD"]
-		}
-	],
-	"playSessions": [
-		{
-			"id": 1,
-			"userId": 1,
-			"game": "LoL",
-			"playTime": 0,
-			"description": "I need to try out this one so that I can lose my life and my soul"
-		},
-		{
-			"id": 2,
-			"userId": 1,
-			"game": "OW",
-			"playTime": 100,
-			"description": "Finally I had a win in the end"
-		},
-		{
-			"id": 3,
-			"userId": 2,
-			"game": "DnD",
-			"playTime": 600,
-			"description": "I finished my turn in Civ"
-		}
-	]
+  "movies": [
+    {
+      "id": 1,
+      "title": "Inception",
+      "year": 2010,
+      "rating": 8.8,
+      "poster": "https://image.tmdb.org/t/p/w500/9gk7adHYeDvHkCSEqAvQNLV5Uge.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Interstellar",
+      "year": 2014,
+      "rating": 8.6,
+      "poster": "https://image.tmdb.org/t/p/w500/rAiYTfKGqDCRIIqo664sY9XZIvQ.jpg"
+    },
+    {
+      "id": 3,
+      "title": "The Dark Knight",
+      "year": 2008,
+      "rating": 9.0,
+      "poster": "https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg"
+    },
+    {
+      "id": 4,
+      "title": "The Batman",
+      "year": 2022,
+      "rating": 8.2,
+      "poster": "https://image.tmdb.org/t/p/w500/74xTEgt7R36Fpooo50r9T25onhq.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Fight Club",
+      "year": 1999,
+      "rating": 8.8,
+      "poster": "https://image.tmdb.org/t/p/w500/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Forrest Gump",
+      "year": 1994,
+      "rating": 8.8,
+      "poster": "https://image.tmdb.org/t/p/w500/saHP97rTPS5eLmrLQEcANmKrsFl.jpg"
+    },
+    {
+      "id": 7,
+      "title": "The Matrix",
+      "year": 1999,
+      "rating": 8.7,
+      "poster": "https://image.tmdb.org/t/p/w500/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Gladiator",
+      "year": 2000,
+      "rating": 8.5,
+      "poster": "https://image.tmdb.org/t/p/w500/ehGpN04mLJIrSnxcZBMvHeG0eDc.jpg"
+    },
+    {
+      "id": 9,
+      "title": "Whiplash",
+      "year": 2014,
+      "rating": 8.5,
+      "poster": "https://image.tmdb.org/t/p/w500/lIv1QinFqz4dlp5U4lQ6HaiskOZ.jpg"
+    },
+    {
+      "id": 10,
+      "title": "The Prestige",
+      "year": 2006,
+      "rating": 8.5,
+      "poster": "https://image.tmdb.org/t/p/w500/5MXyQfz8xUP3dIFPTubhTsbFY6N.jpg"
+    },
+    {
+      "id": 11,
+      "title": "Parasite",
+      "year": 2019,
+      "rating": 8.6,
+      "poster": "https://image.tmdb.org/t/p/w500/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg"
+    },
+    {
+      "id": 12,
+      "title": "Joker",
+      "year": 2019,
+      "rating": 8.5,
+      "poster": "https://image.tmdb.org/t/p/w500/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg"
+    },
+    {
+      "id": 13,
+      "title": "Dune",
+      "year": 2021,
+      "rating": 8.0,
+      "poster": "https://image.tmdb.org/t/p/w500/d5NXSklXo0qyIYkgV94XAgMIckC.jpg"
+    },
+    {
+      "id": 14,
+      "title": "Blade Runner 2049",
+      "year": 2017,
+      "rating": 8.0,
+      "poster": "https://image.tmdb.org/t/p/w500/gajva2L0rPYkEWjzgFlBXCAVBE5.jpg"
+    },
+    {
+      "id": 15,
+      "title": "Mad Max Fury Road",
+      "year": 2015,
+      "rating": 8.1,
+      "poster": "https://image.tmdb.org/t/p/w500/8tZYtuWezp8JbcsvHYO0O46tFbo.jpg"
+    },
+    {
+      "id": 16,
+      "title": "John Wick",
+      "year": 2014,
+      "rating": 7.9,
+      "poster": "https://image.tmdb.org/t/p/w500/fZPSd91yGE9fCcCe6OoQr6E3Bev.jpg"
+    },
+    {
+      "id": 17,
+      "title": "Titanic",
+      "year": 1997,
+      "rating": 7.9,
+      "poster": "https://image.tmdb.org/t/p/w500/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg"
+    },
+    {
+      "id": 18,
+      "title": "Avatar",
+      "year": 2009,
+      "rating": 7.6,
+      "poster": "https://image.tmdb.org/t/p/w500/jRXYjXNq0Cs2TcJjLkki24MLp7u.jpg"
+    },
+    {
+      "id": 19,
+      "title": "Avengers Endgame",
+      "year": 2019,
+      "rating": 8.4,
+      "poster": "https://image.tmdb.org/t/p/w500/ulzhLuWrPK07P1YkdWQLZnQh1JL.jpg"
+    },
+    {
+      "id": 20,
+      "title": "The Godfather",
+      "year": 1972,
+      "rating": 9.2,
+      "poster": "https://image.tmdb.org/t/p/w500/3bhkrj58Vtu7enYsRolD1fZdja1.jpg"
+    },
+    {
+      "id": 101,
+      "title": "Se7en",
+      "year": 1995,
+      "rating": 8.6,
+      "poster": "https://image.tmdb.org/t/p/w500/69Sns8WoET6CfaYlIkHbla4l7nC.jpg"
+    },
+    {
+      "id": 102,
+      "title": "The Silence of the Lambs",
+      "year": 1991,
+      "rating": 8.6,
+      "poster": "https://image.tmdb.org/t/p/w500/uS9m8OBk1A8eM9I042bx8XXpqAq.jpg"
+    },
+    {
+      "id": 103,
+      "title": "The Departed",
+      "year": 2006,
+      "rating": 8.5,
+      "poster": "https://image.tmdb.org/t/p/w500/nT97ifVT2J1yMQmeq20Qblg61T.jpg"
+    },
+    {
+      "id": 104,
+      "title": "Goodfellas",
+      "year": 1990,
+      "rating": 8.7,
+      "poster": "https://image.tmdb.org/t/p/w500/aKuFiU82s5ISJpGZp7YkIr3kCUd.jpg"
+    },
+    {
+      "id": 105,
+      "title": "Scarface",
+      "year": 1983,
+      "rating": 8.3,
+      "poster": "https://image.tmdb.org/t/p/w500/iQ5ztdjvteGeboxtmRdXEChJOHh.jpg"
+    },
+
+    {
+      "id": 106,
+      "title": "Heat",
+      "year": 1995,
+      "rating": 8.3,
+      "poster": "https://image.tmdb.org/t/p/w500/zMyfPUelumio3tiDKPffaUpsQTD.jpg"
+    },
+    {
+      "id": 107,
+      "title": "The Green Mile",
+      "year": 1999,
+      "rating": 8.6,
+      "poster": "https://image.tmdb.org/t/p/w500/velWPhVMQeQKcxggNEU8YmIo52R.jpg"
+    },
+    {
+      "id": 108,
+      "title": "No Country for Old Men",
+      "year": 2007,
+      "rating": 8.1,
+      "poster": "https://image.tmdb.org/t/p/w500/6d5XOczc226jECq0LIX0siKtgHR.jpg"
+    },
+    {
+      "id": 109,
+      "title": "The Wolf of Wall Street",
+      "year": 2013,
+      "rating": 8.2,
+      "poster": "https://image.tmdb.org/t/p/w500/34m2tygAYBGqA9MXKhRDtzYd4MR.jpg"
+    },
+    {
+      "id": 110,
+      "title": "Logan",
+      "year": 2017,
+      "rating": 8.1,
+      "poster": "https://image.tmdb.org/t/p/w500/fnbjcRDYn6YviCcePDnGdyAkYsB.jpg"
+    },
+
+    {
+      "id": 111,
+      "title": "Shutter Island",
+      "year": 2010,
+      "rating": 8.2,
+      "poster": "https://image.tmdb.org/t/p/w500/4GDy0PHYX3VRL7hVn5k2vPjv9l.jpg"
+    },
+    {
+      "id": 112,
+      "title": "The Imitation Game",
+      "year": 2014,
+      "rating": 8.0,
+      "poster": "https://image.tmdb.org/t/p/w500/zSqJ1qFq8NXFfi7JeIYMlzyR0dx.jpg"
+    },
+    {
+      "id": 113,
+      "title": "Prisoners",
+      "year": 2013,
+      "rating": 8.1,
+      "poster": "https://image.tmdb.org/t/p/w500/uhviyknTT5cEQXbn6vWIqfM4vGm.jpg"
+    },
+    {
+      "id": 114,
+      "title": "Gone Girl",
+      "year": 2014,
+      "rating": 8.1,
+      "poster": "https://image.tmdb.org/t/p/w500/qymaJhucquUwjpb8oiqynMeXnID.jpg"
+    },
+    {
+      "id": 115,
+      "title": "Black Swan",
+      "year": 2010,
+      "rating": 8.0,
+      "poster": "https://image.tmdb.org/t/p/w500/6ZyVjTTzF6R9N1mFp4u6n4bWv5J.jpg"
+    },
+    {
+      "id": 151,
+      "title": "The Big Short",
+      "year": 2015,
+      "rating": 7.8,
+      "poster": "https://image.tmdb.org/t/p/w500/isuQWbJPbjybBEWdcCaBUPmU0XO.jpg"
+    },
+    {
+      "id": 152,
+      "title": "American Psycho",
+      "year": 2000,
+      "rating": 7.6,
+      "poster": "https://image.tmdb.org/t/p/w500/9uGHEgsiUXjCNq8wdq4r49YL8A1.jpg"
+    },
+    {
+      "id": 153,
+      "title": "Requiem for a Dream",
+      "year": 2000,
+      "rating": 8.3,
+      "poster": "https://image.tmdb.org/t/p/w500/nOd6vjEmzCT0k4VYqsA2hwyi87C.jpg"
+    },
+    {
+      "id": 154,
+      "title": "Her",
+      "year": 2013,
+      "rating": 8.0,
+      "poster": "https://image.tmdb.org/t/p/w500/eCOtqtfvn7mxGl6nfmq4b1exJRc.jpg"
+    },
+    {
+      "id": 155,
+      "title": "Drive",
+      "year": 2011,
+      "rating": 7.8,
+      "poster": "https://image.tmdb.org/t/p/w500/602vevIURmpDfzbnv5Ubi6wIkQm.jpg"
+    },
+
+    {
+      "id": 156,
+      "title": "The Social Network",
+      "year": 2010,
+      "rating": 7.7,
+      "poster": "https://image.tmdb.org/t/p/w500/n0ybibhJtQ5icDqTp8eRytcIHJx.jpg"
+    },
+    {
+      "id": 157,
+      "title": "Nightcrawler",
+      "year": 2014,
+      "rating": 7.8,
+      "poster": "https://image.tmdb.org/t/p/w500/j9HrX8f7GbZQpJfFJ3Y0AHT6bbi.jpg"
+    },
+    {
+      "id": 158,
+      "title": "Arrival",
+      "year": 2016,
+      "rating": 7.9,
+      "poster": "https://image.tmdb.org/t/p/w500/x2FJsf1ElAgr63Y3PNPtJrcmpoe.jpg"
+    },
+    {
+      "id": 159,
+      "title": "Ex Machina",
+      "year": 2014,
+      "rating": 7.7,
+      "poster": "https://image.tmdb.org/t/p/w500/7rfucKCjV01OEsGr9grXa34sS2P.jpg"
+    },
+    {
+      "id": 160,
+      "title": "Moonlight",
+      "year": 2016,
+      "rating": 7.4,
+      "poster": "https://image.tmdb.org/t/p/w500/AjbENYG3b8lhYSkdrWwlhVlr6wG.jpg"
+    }
+  ],
+  "series": [
+    {
+      "id": 1,
+      "title": "Breaking Bad",
+      "rating": 9.5,
+      "poster": "https://image.tmdb.org/t/p/w500/ggFHVNu6YYI5L9pCfOacjizRGt.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Game of Thrones",
+      "rating": 9.2,
+      "poster": "https://image.tmdb.org/t/p/w500/u3bZgnGQ9T01sWNhyveQz0wH0Hl.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Stranger Things",
+      "rating": 8.7,
+      "poster": "https://image.tmdb.org/t/p/w500/49WJfeN0moxb9IPfGn8AIqMGskD.jpg"
+    },
+    {
+      "id": 4,
+      "title": "The Boys",
+      "rating": 8.7,
+      "poster": "https://image.tmdb.org/t/p/w500/stTEycfG9928HYGEISBFaG1ngjM.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Peaky Blinders",
+      "rating": 8.8,
+      "poster": "https://image.tmdb.org/t/p/w500/bGZn5RVzMMXju4ev7xbl1aLdXqq.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Dark",
+      "rating": 8.8,
+      "poster": "https://image.tmdb.org/t/p/w500/apbrbWs8M9lyOpJYU5WXrpFbk1Z.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Narcos",
+      "rating": 8.8,
+      "poster": "https://image.tmdb.org/t/p/w500/rTmal9fDbwh5F0waol2hq35U4ah.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Money Heist",
+      "rating": 8.3,
+      "poster": "https://image.tmdb.org/t/p/w500/reEMJA1uzscCbkpeRJeTT2bjqUp.jpg"
+    },
+    {
+      "id": 9,
+      "title": "Chernobyl",
+      "rating": 9.4,
+      "poster": "https://image.tmdb.org/t/p/w500/hlLXt2tOPT6RRnjiUmoxyG1LTFi.jpg"
+    },
+    {
+      "id": 10,
+      "title": "The Witcher",
+      "rating": 8.1,
+      "poster": "https://image.tmdb.org/t/p/w500/zrPpUlehQaBf8YX2NrVrKK8IEpf.jpg"
+    },
+    {
+      "id": 201,
+      "title": "Better Call Saul",
+      "rating": 9.0,
+      "poster": "https://image.tmdb.org/t/p/w500/fC2HDm5t0kHl7mTm7jxMR31b7by.jpg"
+    },
+    {
+      "id": 202,
+      "title": "The Sopranos",
+      "rating": 9.2,
+      "poster": "https://image.tmdb.org/t/p/w500/6J0b0GdYgF0hQzZpX9z0U4zj2xF.jpg"
+    },
+    {
+      "id": 203,
+      "title": "Westworld",
+      "rating": 8.5,
+      "poster": "https://image.tmdb.org/t/p/w500/8MfgyFHf7XEboZJPZXCIDqqiz6e.jpg"
+    },
+    {
+      "id": 204,
+      "title": "Mindhunter",
+      "rating": 8.6,
+      "poster": "https://image.tmdb.org/t/p/w500/fbKE87mojpIETWepSbD5Qt741fp.jpg"
+    },
+    {
+      "id": 205,
+      "title": "The Mandalorian",
+      "rating": 8.7,
+      "poster": "https://image.tmdb.org/t/p/w500/sWgBv7LV2PRoQgkxwlibdGXKz1S.jpg"
+    },
+
+    {
+      "id": 206,
+      "title": "House of the Dragon",
+      "rating": 8.5,
+      "poster": "https://image.tmdb.org/t/p/w500/z2yahl2uefxDCl0nogcRBstwruJ.jpg"
+    },
+    {
+      "id": 207,
+      "title": "Ozark",
+      "rating": 8.4,
+      "poster": "https://image.tmdb.org/t/p/w500/pCGyUV5YV8A5FWGvATv4v6z1L2P.jpg"
+    },
+    {
+      "id": 208,
+      "title": "True Detective",
+      "rating": 8.9,
+      "poster": "https://image.tmdb.org/t/p/w500/ybw5GQKc6t3Zt9qg1J8b9xEwYFP.jpg"
+    },
+    {
+      "id": 209,
+      "title": "Vikings",
+      "rating": 8.5,
+      "poster": "https://image.tmdb.org/t/p/w500/bQLrHIRNEkE3PdIWQrZHynQZazu.jpg"
+    },
+    {
+      "id": 210,
+      "title": "The Last of Us",
+      "rating": 9.0,
+      "poster": "https://image.tmdb.org/t/p/w500/uKvVjHNqB5VmOrdxqAt2F7J78ED.jpg"
+    },
+    {
+      "id": 251,
+      "title": "Succession",
+      "rating": 8.8,
+      "poster": "https://image.tmdb.org/t/p/w500/7HW47XbkNQ5fiwQFYGWdw9gs144.jpg"
+    },
+    {
+      "id": 252,
+      "title": "The Bear",
+      "rating": 8.6,
+      "poster": "https://image.tmdb.org/t/p/w500/sHFlbKS3WLqMnp9t2ghADIJFukg.jpg"
+    },
+    {
+      "id": 253,
+      "title": "Black Mirror",
+      "rating": 8.7,
+      "poster": "https://image.tmdb.org/t/p/w500/7PRddO7z7mcPi21nZTCMGShAyy1.jpg"
+    },
+    {
+      "id": 254,
+      "title": "Dexter",
+      "rating": 8.6,
+      "poster": "https://image.tmdb.org/t/p/w500/q8dWfc4JwQuv3HayIZeO84jAXED.jpg"
+    },
+    {
+      "id": 255,
+      "title": "Mr Robot",
+      "rating": 8.5,
+      "poster": "https://image.tmdb.org/t/p/w500/oKIBhzZzDX07SoE2bOLhq2EE8rf.jpg"
+    },
+
+    {
+      "id": 256,
+      "title": "Severance",
+      "rating": 8.7,
+      "poster": "https://image.tmdb.org/t/p/w500/5zmiBoMzeeVdQ62no55JOJMY498.jpg"
+    },
+    {
+      "id": 257,
+      "title": "Boardwalk Empire",
+      "rating": 8.5,
+      "poster": "https://image.tmdb.org/t/p/w500/mY7SeH4HFFxW1hiI6cWuwCRKptN.jpg"
+    },
+    {
+      "id": 258,
+      "title": "Fargo",
+      "rating": 8.9,
+      "poster": "https://image.tmdb.org/t/p/w500/7j3x5A6C3aq5n7YzTzQkULuX2vt.jpg"
+    },
+    {
+      "id": 259,
+      "title": "Hannibal",
+      "rating": 8.5,
+      "poster": "https://image.tmdb.org/t/p/w500/i3uCz8yJ7cC5xG9ALlC8n2zLxKe.jpg"
+    },
+    {
+      "id": 260,
+      "title": "The Americans",
+      "rating": 8.4,
+      "poster": "https://image.tmdb.org/t/p/w500/hY6eZk9QKQ9wS8rJ1qkzN7Z1L6L.jpg"
+    }
+  ],
+  "anime": [
+    {
+      "id": 1,
+      "title": "Attack on Titan",
+      "rating": 9.1,
+      "poster": "https://image.tmdb.org/t/p/w500/hTP1DtLGFamjfu8WqjnuQdP1n4i.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Demon Slayer",
+      "rating": 8.9,
+      "poster": "https://image.tmdb.org/t/p/w500/xUfRZu2mi8jH6SzQEJGP6tjBuYj.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Jujutsu Kaisen",
+      "rating": 8.7,
+      "poster": "https://image.tmdb.org/t/p/w500/fHpKWq9ayzSk8nSwqRuaAUemRKh.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Naruto Shippuden",
+      "rating": 8.6,
+      "poster": "https://image.tmdb.org/t/p/w500/zAYRe2bJxpWTVrwwmBc00VFkAf4.jpg"
+    },
+    {
+      "id": 5,
+      "title": "One Piece",
+      "rating": 9.0,
+      "poster": "https://image.tmdb.org/t/p/w500/fcXdJlbSdUEeMSJFsXKsznGwwok.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Death Note",
+      "rating": 9.0,
+      "poster": "https://image.tmdb.org/t/p/w500/iigTJJskR1PcjjXqxdyJwVB3BoU.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Fullmetal Alchemist Brotherhood",
+      "rating": 9.1,
+      "poster": "https://image.tmdb.org/t/p/w500/2UG177tWHy7xRmMKWJHB7nAUmKd.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Bleach",
+      "rating": 8.2,
+      "poster": "https://image.tmdb.org/t/p/w500/2EewmxXe72ogD0EaWM8gqa0ccIw.jpg"
+    },
+    {
+      "id": 9,
+      "title": "Dragon Ball Z",
+      "rating": 8.8,
+      "poster": "https://image.tmdb.org/t/p/w500/f2q6SSj9gnUL7xIY0QHtkQfW5Xr.jpg"
+    },
+    {
+      "id": 10,
+      "title": "Tokyo Ghoul",
+      "rating": 7.8,
+      "poster": "https://image.tmdb.org/t/p/w500/7Ns6tO3aYjppI5bFhyYZurOYGBT.jpg"
+    },
+    {
+      "id": 301,
+      "title": "Steins Gate",
+      "rating": 9.1,
+      "poster": "https://image.tmdb.org/t/p/w500/1fpzE3z8s0GdT1gJc8R7YfJj4C6.jpg"
+    },
+    {
+      "id": 302,
+      "title": "Cowboy Bebop",
+      "rating": 8.9,
+      "poster": "https://image.tmdb.org/t/p/w500/xDi5Z5r7YB8rZPjAbM5R1p4u8qB.jpg"
+    },
+    {
+      "id": 303,
+      "title": "Code Geass",
+      "rating": 8.8,
+      "poster": "https://image.tmdb.org/t/p/w500/6J0xC7N1pAVccahJgN9zeps2son.jpg"
+    },
+    {
+      "id": 304,
+      "title": "Vinland Saga",
+      "rating": 8.8,
+      "poster": "https://image.tmdb.org/t/p/w500/4OaE9YzC4ZkR0A1n6G8M1r0kKpF.jpg"
+    },
+    {
+      "id": 305,
+      "title": "Monster",
+      "rating": 8.9,
+      "poster": "https://image.tmdb.org/t/p/w500/4hZ8aW5pY1fFvH2dOZqzZ7n0fS5.jpg"
+    },
+
+    {
+      "id": 306,
+      "title": "Erased",
+      "rating": 8.5,
+      "poster": "https://image.tmdb.org/t/p/w500/8nFZzM5zXkKQK6s8N5V5XzDqR0f.jpg"
+    },
+    {
+      "id": 307,
+      "title": "Parasyte",
+      "rating": 8.6,
+      "poster": "https://image.tmdb.org/t/p/w500/8n5yHjH1pN2R8e7N6zP0E1w0p8X.jpg"
+    },
+    {
+      "id": 308,
+      "title": "Akame ga Kill",
+      "rating": 7.8,
+      "poster": "https://image.tmdb.org/t/p/w500/6WJ6pJp8Z9sE5N3Wk8UjZkzX3aE.jpg"
+    },
+    {
+      "id": 309,
+      "title": "Samurai Champloo",
+      "rating": 8.5,
+      "poster": "https://image.tmdb.org/t/p/w500/vQk9Wm9M2D9k8M8J6Z8U9H0N0Xk.jpg"
+    },
+    {
+      "id": 310,
+      "title": "Psycho Pass",
+      "rating": 8.4,
+      "poster": "https://image.tmdb.org/t/p/w500/2J6c6zE7N1H0M6kJ3k5H4X5N0GJ.jpg"
+    },
+    {
+      "id": 351,
+      "title": "Made in Abyss",
+      "rating": 8.8,
+      "poster": "https://image.tmdb.org/t/p/w500/4sKp9j7gK5Zx7Yp4Q1R4Z7w6s8T.jpg"
+    },
+    {
+      "id": 352,
+      "title": "Dororo",
+      "rating": 8.3,
+      "poster": "https://image.tmdb.org/t/p/w500/j5pTzFv8N7nZx6qYQkzYp3M8Y5U.jpg"
+    },
+    {
+      "id": 353,
+      "title": "Devilman Crybaby",
+      "rating": 7.9,
+      "poster": "https://image.tmdb.org/t/p/w500/1F7CwF8V6F8j6P9mT7kZzFJ8T2M.jpg"
+    },
+    {
+      "id": 354,
+      "title": "Mob Psycho 100",
+      "rating": 8.7,
+      "poster": "https://image.tmdb.org/t/p/w500/qb7lKZ1z9w2F4K9p5p8wM7pN7Z7.jpg"
+    },
+    {
+      "id": 355,
+      "title": "Odd Taxi",
+      "rating": 8.6,
+      "poster": "https://image.tmdb.org/t/p/w500/8O7R1pP8M9q6V3nZkF7X5F9ZK4y.jpg"
+    },
+
+    {
+      "id": 356,
+      "title": "86 Eighty Six",
+      "rating": 8.4,
+      "poster": "https://image.tmdb.org/t/p/w500/m9D3z2FZ7pK1M7J4ZP3yZK8kR1S.jpg"
+    },
+    {
+      "id": 357,
+      "title": "Ranking of Kings",
+      "rating": 8.7,
+      "poster": "https://image.tmdb.org/t/p/w500/7ZK2M8pN7F5KZ9Y8F4R9F3p7K2Z.jpg"
+    },
+    {
+      "id": 358,
+      "title": "Tokyo Revengers",
+      "rating": 8.1,
+      "poster": "https://image.tmdb.org/t/p/w500/6Zp8K1F7Z8M7pN3Z9KZ8Y5F4R3M.jpg"
+    },
+    {
+      "id": 359,
+      "title": "Horimiya",
+      "rating": 8.3,
+      "poster": "https://image.tmdb.org/t/p/w500/5K9ZpF7M3R8Y1Z8KZpN7F4Z2M9p.jpg"
+    },
+    {
+      "id": 360,
+      "title": "Chainsaw Man",
+      "rating": 8.6,
+      "poster": "https://image.tmdb.org/t/p/w500/npdB6eFzizki0WaZ1OvKcJrWe97.jpg"
+    }
+  ]
 }
