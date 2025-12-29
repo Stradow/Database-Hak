@@ -797,6 +797,12 @@
       "username": "user",
       "password": "1234",
       "role": "USER"
+    },
+    {
+      "username": "Amaury",
+      "password": "azerty1234",
+      "role": "USER",
+      "id": 3
     }
   ],
   "watchlist": [
@@ -805,6 +811,18 @@
       "movieId": 1,
       "createdAt": "2025-12-26T15:13:28.672Z",
       "id": 1
+    },
+    {
+      "userId": 2,
+      "movieId": 6,
+      "createdAt": "2025-12-27T13:16:40.107Z",
+      "id": 2
+    },
+    {
+      "userId": 2,
+      "movieId": 16,
+      "createdAt": "2025-12-29T12:59:36.977Z",
+      "id": 3
     }
   ],
   "favorites": [
@@ -825,6 +843,18 @@
       "movieId": 8,
       "createdAt": "2025-12-26T15:14:41.655Z",
       "id": 3
+    },
+    {
+      "userId": 2,
+      "movieId": 6,
+      "createdAt": "2025-12-27T13:16:49.146Z",
+      "id": 4
+    },
+    {
+      "userId": 2,
+      "movieId": 16,
+      "createdAt": "2025-12-29T13:00:22.429Z",
+      "id": 5
     }
   ]
 }
