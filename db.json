@@ -345,14 +345,6 @@
       "description": "A linguist is recruited to communicate with mysterious aliens as global tensions rise and time itself feels unstable."
     },
     {
-      "id": 44,
-      "title": "Ex Machina",
-      "year": 2014,
-      "rating": 7.7,
-      "poster": "https://image.tmdb.org/t/p/w500/7rfucKCjV01OEsGr9grXa34sS2P.jpg",
-      "description": "A programmer evaluates a humanoid robot's intelligence, entering a psychological game of power and control."
-    },
-    {
       "id": 45,
       "title": "Moonlight",
       "year": 2016,
@@ -823,6 +815,18 @@
       "movieId": 16,
       "createdAt": "2025-12-29T12:59:36.977Z",
       "id": 3
+    },
+    {
+      "userId": 3,
+      "movieId": 24,
+      "createdAt": "2026-01-02T06:54:27.088Z",
+      "id": 4
+    },
+    {
+      "userId": 2,
+      "movieId": 41,
+      "createdAt": "2026-01-04T11:26:52.241Z",
+      "id": 5
     }
   ],
   "favorites": [
@@ -855,6 +859,18 @@
       "movieId": 16,
       "createdAt": "2025-12-29T13:00:22.429Z",
       "id": 5
+    },
+    {
+      "userId": 3,
+      "movieId": 8,
+      "createdAt": "2026-01-02T06:54:14.234Z",
+      "id": 6
+    },
+    {
+      "userId": 3,
+      "movieId": 13,
+      "createdAt": "2026-01-02T06:54:18.406Z",
+      "id": 7
     }
   ]
 }
